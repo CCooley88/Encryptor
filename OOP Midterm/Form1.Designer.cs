@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.StandardTextLabel = new System.Windows.Forms.Label();
             this.stdInput = new System.Windows.Forms.TextBox();
             this.encryptedOutput = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.encrypt = new System.Windows.Forms.Button();
-            this.decrypt = new System.Windows.Forms.Button();
+            this.EncryptedOutputLabel = new System.Windows.Forms.Label();
+            this.EncryptButton = new System.Windows.Forms.Button();
+            this.DecryptButton = new System.Windows.Forms.Button();
             this.stdOutput = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.DecryptedOutputLabel = new System.Windows.Forms.Label();
             this.encryptedInput = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.EncryptedTextLabel = new System.Windows.Forms.Label();
+            this.InstructionLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // StandardTextLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Standard Text";
+            this.StandardTextLabel.AutoSize = true;
+            this.StandardTextLabel.Location = new System.Drawing.Point(48, 42);
+            this.StandardTextLabel.Name = "StandardTextLabel";
+            this.StandardTextLabel.Size = new System.Drawing.Size(74, 13);
+            this.StandardTextLabel.TabIndex = 0;
+            this.StandardTextLabel.Text = "Standard Text";
             // 
             // stdInput
             // 
@@ -65,34 +65,34 @@
             this.encryptedOutput.Size = new System.Drawing.Size(100, 20);
             this.encryptedOutput.TabIndex = 3;
             // 
-            // label2
+            // EncryptedOutputLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Encrypted Output";
+            this.EncryptedOutputLabel.AutoSize = true;
+            this.EncryptedOutputLabel.Location = new System.Drawing.Point(49, 94);
+            this.EncryptedOutputLabel.Name = "EncryptedOutputLabel";
+            this.EncryptedOutputLabel.Size = new System.Drawing.Size(90, 13);
+            this.EncryptedOutputLabel.TabIndex = 2;
+            this.EncryptedOutputLabel.Text = "Encrypted Output";
             // 
-            // encrypt
+            // EncryptButton
             // 
-            this.encrypt.Location = new System.Drawing.Point(67, 148);
-            this.encrypt.Name = "encrypt";
-            this.encrypt.Size = new System.Drawing.Size(75, 23);
-            this.encrypt.TabIndex = 4;
-            this.encrypt.Text = "Encrypt";
-            this.encrypt.UseVisualStyleBackColor = true;
-            this.encrypt.Click += new System.EventHandler(this.encrypt_Click);
+            this.EncryptButton.Location = new System.Drawing.Point(67, 148);
+            this.EncryptButton.Name = "EncryptButton";
+            this.EncryptButton.Size = new System.Drawing.Size(75, 23);
+            this.EncryptButton.TabIndex = 4;
+            this.EncryptButton.Text = "Encrypt";
+            this.EncryptButton.UseVisualStyleBackColor = true;
+            this.EncryptButton.Click += new System.EventHandler(this.encrypt_Click);
             // 
-            // decrypt
+            // DecryptButton
             // 
-            this.decrypt.Location = new System.Drawing.Point(230, 148);
-            this.decrypt.Name = "decrypt";
-            this.decrypt.Size = new System.Drawing.Size(75, 23);
-            this.decrypt.TabIndex = 9;
-            this.decrypt.Text = "Decrypt";
-            this.decrypt.UseVisualStyleBackColor = true;
-            this.decrypt.Click += new System.EventHandler(this.decrypt_Click);
+            this.DecryptButton.Location = new System.Drawing.Point(230, 148);
+            this.DecryptButton.Name = "DecryptButton";
+            this.DecryptButton.Size = new System.Drawing.Size(75, 23);
+            this.DecryptButton.TabIndex = 9;
+            this.DecryptButton.Text = "Decrypt";
+            this.DecryptButton.UseVisualStyleBackColor = true;
+            this.DecryptButton.Click += new System.EventHandler(this.decrypt_Click);
             // 
             // stdOutput
             // 
@@ -102,14 +102,14 @@
             this.stdOutput.Size = new System.Drawing.Size(100, 20);
             this.stdOutput.TabIndex = 8;
             // 
-            // label3
+            // DecryptedOutputLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(214, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Decrypted Output";
+            this.DecryptedOutputLabel.AutoSize = true;
+            this.DecryptedOutputLabel.Location = new System.Drawing.Point(214, 94);
+            this.DecryptedOutputLabel.Name = "DecryptedOutputLabel";
+            this.DecryptedOutputLabel.Size = new System.Drawing.Size(91, 13);
+            this.DecryptedOutputLabel.TabIndex = 7;
+            this.DecryptedOutputLabel.Text = "Decrypted Output";
             // 
             // encryptedInput
             // 
@@ -118,40 +118,40 @@
             this.encryptedInput.Size = new System.Drawing.Size(100, 20);
             this.encryptedInput.TabIndex = 6;
             // 
-            // label4
+            // EncryptedTextLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(213, 42);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Encrypted Text";
+            this.EncryptedTextLabel.AutoSize = true;
+            this.EncryptedTextLabel.Location = new System.Drawing.Point(213, 42);
+            this.EncryptedTextLabel.Name = "EncryptedTextLabel";
+            this.EncryptedTextLabel.Size = new System.Drawing.Size(79, 13);
+            this.EncryptedTextLabel.TabIndex = 5;
+            this.EncryptedTextLabel.Text = "Encrypted Text";
             // 
-            // label5
+            // InstructionLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(49, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Insert four digits to encrypt or decrypt";
+            this.InstructionLabel.AutoSize = true;
+            this.InstructionLabel.Location = new System.Drawing.Point(49, 9);
+            this.InstructionLabel.Name = "InstructionLabel";
+            this.InstructionLabel.Size = new System.Drawing.Size(181, 13);
+            this.InstructionLabel.TabIndex = 10;
+            this.InstructionLabel.Text = "Insert four digits to encrypt or decrypt";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(372, 230);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.decrypt);
+            this.Controls.Add(this.InstructionLabel);
+            this.Controls.Add(this.DecryptButton);
             this.Controls.Add(this.stdOutput);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.DecryptedOutputLabel);
             this.Controls.Add(this.encryptedInput);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.encrypt);
+            this.Controls.Add(this.EncryptedTextLabel);
+            this.Controls.Add(this.EncryptButton);
             this.Controls.Add(this.encryptedOutput);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.EncryptedOutputLabel);
             this.Controls.Add(this.stdInput);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.StandardTextLabel);
             this.Name = "Form1";
             this.Text = "Encryptor 5000";
             this.ResumeLayout(false);
@@ -161,17 +161,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label StandardTextLabel;
         private System.Windows.Forms.TextBox stdInput;
         private System.Windows.Forms.TextBox encryptedOutput;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button encrypt;
-        private System.Windows.Forms.Button decrypt;
+        private System.Windows.Forms.Label EncryptedOutputLabel;
+        private System.Windows.Forms.Button EncryptButton;
+        private System.Windows.Forms.Button DecryptButton;
         private System.Windows.Forms.TextBox stdOutput;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label DecryptedOutputLabel;
         private System.Windows.Forms.TextBox encryptedInput;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label EncryptedTextLabel;
+        private System.Windows.Forms.Label InstructionLabel;
     }
 }
 
